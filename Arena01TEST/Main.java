@@ -13,7 +13,6 @@ public class Main {
     static final int XP_REWARD = 20;
     static final int HERO_POWER = 10;
 
-    // Picks the console charset when a real console exists, otherwise the JVM default.
     static Charset setupConsole() {
         Console console = System.console();
         Charset charset = (console != null) ? console.charset() : Charset.defaultCharset();
